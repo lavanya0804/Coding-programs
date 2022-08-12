@@ -1,0 +1,28 @@
+//C program to read a number 'n' read x,y values and replace 'x' value with 'y' value.
+#include <stdio.h>
+
+int main()
+{
+    int x,y;
+	int n,r,count=1,s=0;
+	scanf("%d",&n);
+	printf("Enter x and y values");
+	scanf("%d%d",&x,&y);
+	while(n!=0)
+	{
+		r=n%10;
+		if(r==x)  
+		{
+			r=y;
+		}
+		s=s+(r*count);
+		count=count*10;
+		n=n/10;
+	}
+	printf("%d",s);
+    return 0;
+}
+output:
+14824
+enter x and y values 4 8
+18828
