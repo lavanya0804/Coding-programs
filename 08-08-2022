@@ -1,0 +1,52 @@
+// Fancy number:read a number and if print if odd count =even count print fancy number else not fancy number.
+#include <stdio.h>
+
+
+int main()
+
+{
+   
+ int n;
+   
+ int r,ecount=0,ocount=0;
+   
+ scanf("%d",&n);
+   
+ while(n>0)
+    
+ {
+      
+   r=n%10;
+       
+   if(r%2==0)
+       
+   ecount=ecount+1;
+      
+   else
+       
+   ocount=ocount+1;
+       
+   n=n/10;
+    
+ }
+    
+  printf("even count %d\n",ecount);
+  
+  printf("odd count %d\n",ocount);
+   
+   if(ecount==ocount)
+  
+     printf("FANCY NUMBER");
+    
+   else
+   
+     printf("NOT FANCY NUMBER");
+   
+ return 0;
+
+}
+output:
+123456
+even count 3
+odd count 3
+fancy number
