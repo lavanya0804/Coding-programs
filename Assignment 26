@@ -1,0 +1,25 @@
+//C program to find given number is harshadh number or not.
+#include <stdio.h>
+
+int main()
+{
+    int n, r,sum=0,temp;
+    scanf("%d",&n);
+    temp=n;
+    while(n!=0)
+    {
+        r=n%10;
+        sum=sum+r;
+        n=n/10;
+    }
+    if(temp%sum==0)
+    printf("HARSHAD NUMBER");
+    else
+    printf("NOT HARSHAD NUMBER");
+    return 0;
+}
+output:
+156
+HARSHAD NUMBER
+22
+NOT HARSHAD NUMBER
