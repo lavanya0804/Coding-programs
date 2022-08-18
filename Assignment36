@@ -1,0 +1,26 @@
+//C program to find missing no from array of n consecutive numbers.
+#include <stdio.h>
+
+int main()
+{
+    int arr[10],i,j,k,s=0,t=0,miss_no;
+    for(i=0;i<10;i++)
+    {
+    scanf("%d",&arr[i]);
+    }
+    for(j=0;j<10;j++)
+    {
+        s=s+arr[j];
+    }
+    for(k=0;k<=10;k++)
+    {
+        t=t+k;
+    }
+    miss_no=t-s;
+    printf("the missing number in the  array is %d\n",miss_no);
+    return 0;
+}
+output:
+10
+1 2 3 5 6 7 8 9 10 
+the missing number in the array is 4
