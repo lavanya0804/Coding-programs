@@ -12,7 +12,7 @@ int main()
     {
         s=s+arr[j];
     }
-    for(k=0;k<=10;k++)
+    for(k=1;k<=10;k++)
     {
         t=t+k;
     }
