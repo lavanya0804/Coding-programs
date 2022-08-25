@@ -1,1 +1,30 @@
 // C program to print column sum value,where coulmn number is supplied by the user at run time?
+#include<stdio.h>
+int main()
+{
+int a[100][100],i,j,r,c,sum,n;
+printf("enter how many rows\n");
+scanf("%d",&r);
+printf("enter how many cols\n");
+scanf("%d",&c);
+printf("enter elements into array\n");
+for(i=0;i<r;i++)
+{
+for(j=0;j<c;j++)
+{
+scanf("%d",&a[i][j]);
+}
+}
+printf("column number\n);
+scanf("%d",&n);
+for(i=0;i<r;i++)
+{
+for(j=0;j<r;j++)
+{
+if(j==n)
+sum=sum+a[i][j];
+}
+}
+printf("%d column sum=%d",n,sum);
+return 0;
+}
