@@ -3,14 +3,15 @@
 
 int main()
 {
-    int n,term,i;
+    int i,j,n,a;
     scanf("%d",&n);
-    scanf("%d",&term);
-    printf("----------------\n");
-    for(i=1;i<=term;i++)
+    for(i=1;i<=n;i++)
     {
-        printf("%d *%d=%d\n",n,i,n*i);
+    for(j=1;j<=n;j++)
+    a=i*j;
+    printf("%d\t",a)
     }
-
+    printf("\n");
+    }
     return 0;
 }
