@@ -1,0 +1,16 @@
+//C program to read n values and to print multiplication chart.
+#include <stdio.h>
+
+int main()
+{
+    int n,term,i;
+    scanf("%d",&n);
+    scanf("%d",&term);
+    printf("----------------\n");
+    for(i=1;i<=term;i++)
+    {
+        printf("%d *%d=%d\n",n,i,n*i);
+    }
+
+    return 0;
+}
