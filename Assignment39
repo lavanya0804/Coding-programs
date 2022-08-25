@@ -1,0 +1,24 @@
+// C program to read n value and display following pttern.
+#include<stdio.h>
+int main()
+{
+int i,j,n;
+scanf("%d",&n);
+for(i=n;i>=1;i--)
+{
+for(j=n;j>=1;j--)
+{
+printf("%d",j);
+}
+printf("\n");
+}
+return 0;
+}
+output:
+enter n value 6
+6
+6 5
+6 5 4
+6 5 4 3
+6 5 4 3 2 
+6 5 4 3 2 1
