@@ -1,3 +1,4 @@
+//C program to print given 2 strings are anagram or not .
 #include <stdio.h>
 #include<string.h>
 
