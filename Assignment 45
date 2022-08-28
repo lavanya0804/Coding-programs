@@ -1,0 +1,30 @@
+//C program to read string and count no of uppercase ,lowercase and numbers.
+#include <stdio.h>
+#include<string.h>
+void main()
+{
+  char str[100];
+  int i,c1=0,c2=0,c3=0,c4=0;
+  printf("\n enter a string");
+  gets(str);
+  for(i=0;str[i]!='\0';i++)
+  {
+      if(str[i]>=65 && str[i]<=90)
+      c1++;
+      else if(str[i]>=95 && str[i]<=122)
+      c2++;
+      else if(str[i]>=48 && str[i]<=57)
+      c3++;
+      else
+      c4++;
+  }
+  printf("\n upper case=%d",c1);
+  printf("\n lower case=%d",c2);
+  printf("\n numbers=%d",c3);
+  }
+  output:
+  enter a string
+  Aditya@123
+  upper case=1
+  lower case=5
+  numbers=3
