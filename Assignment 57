@@ -1,0 +1,15 @@
+//Read n values. Print n values dynamically using pointers and print sum of numbers.
+#include <stdio.h>
+#include<stdlib.h>
+int main() 
+{
+    int *a,n,i,sum=0;
+    scanf("%d",&n);
+    a=(int*)malloc(n*sizeof(int));
+    for(i=0; i<n; i++)
+          scanf("%d",a+i);
+    for(i=0; i<n; i++)
+           sum=sum+*(a+i);
+    printf("%d",sum);
+    return 0;
+}
