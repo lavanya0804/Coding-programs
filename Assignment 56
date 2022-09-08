@@ -1,27 +1,29 @@
 //Read a number n if the number is Fibonacci print yes or no. 
 #include<stdio.h>
-int main()
+void main()
 {
-int fib[25], i,n,a,c=0;
+   int first=0,second=1, sum=0;
+   sum=first+second;
+int n;int k=0;
 scanf("%d",&n);
-fib[0] = 0;
-fib[1] = 1;
-for (i = 2; i < n; i++)
-{
-fib[i] = fib[i - 1] + fib[i- 2];
-}
-scanf("%d",&a);
-for (i = 0; i < n; i++)
-{
-printf("%d ", fib[i]);
-if(a==fib[i])
-c=0;
+if(n==1 || n==0)
+  k=1;
 else
-c++;
+{
+while(sum<=n)
+{
+  sum=first+second;
+  first=second;
+second = sum;
+ if(sum==n)
+  {
+   k=1;
+   break;
+  }  
+ }
 }
-if(c==0)
-printf("YES");
-else
-printf("NO");
-return 0;
+ if(k==0)
+   printf("No");
+  else
+    printf("Yes");
 }
