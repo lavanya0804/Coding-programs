@@ -1,0 +1,7 @@
+// Write a python program to print division of two numbers.
+x=20
+y=2
+z=x/y
+print("division is",z)
+output:
+division is 10.0
