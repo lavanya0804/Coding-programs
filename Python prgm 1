@@ -1,0 +1,7 @@
+//Write a pytho program to ind addition of two numbers.
+x=3
+y=7
+z=x+y
+print("addition is",z)
+output:
+addition is 10
