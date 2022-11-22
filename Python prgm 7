@@ -1,0 +1,11 @@
+//Write a program to print sname,sno,phno,gender,group.
+sname=input("enter student name")
+sno=int(input("enter student sno"))
+phno=int(input("enter phone num"))
+gender=input("enter gender")
+group=input("enter group")
+print(sname)
+print(sno)
+print(phno)
+print(gender)
+print(group)
