@@ -1,0 +1,7 @@
+// Write a python program to print subtraction of two numbers.
+x=20
+y=10
+z=x-y
+print("subtarction is",z)
+output:
+subtraction is 10
