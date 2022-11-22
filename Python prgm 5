@@ -1,0 +1,9 @@
+//Write a python program to calculate emi.
+p=int(input("principal anount"))
+r=float(input("rate of interest"))
+t=int(input("time"))
+m=int(input("months"))
+si=(p*r*t)/100;
+emi=(si+p)/t*m;
+print("simple interest",si)
+print("equiatted monthly installment",emi)
