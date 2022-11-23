@@ -1,3 +1,5 @@
-//Write a program to print given num is even or odd.
+//Write a program to print given num is positive or negative.
 a=int(input('enter a num'))
-print('a is even') if a%2==0 else print('a is odd')
+print('a is positive') if a>0 else print('a is negative')
+
+
