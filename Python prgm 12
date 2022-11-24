@@ -1,0 +1,15 @@
+//Write program to perform arithmatic operations.
+a=int(input('enter a number'))
+b=int(input('enter a number'))
+add=a+b;
+sub=a-b;
+mul=a*b;
+div=a/b;
+modulo=a%b;
+fd=a//b;
+print(add,'a+b')
+print(sub,'a-b')
+print(mul,'a*b')
+print(div,'a/b')
+print(modulo,'a%b')
+print(fd,'a//b')
