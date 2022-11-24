@@ -1,0 +1,15 @@
+//Write a program to print whether the student is pass or fail.
+sno=int(input('enter student no'))
+sname=input('ener a student name')
+group=input('enter a group')
+s1=int(input('enter marks'))
+s2=int(input('enter marks'))
+s3=int(input('enter marks'))
+if s1>=35 and s2>=35 and s3>=5:
+    print('pass')
+else:
+    print('fail')
+print(sno)
+print(sname)
+print(group)
+              
