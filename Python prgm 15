@@ -1,0 +1,10 @@
+//Write a program to find out given number is present in list.
+L1=[2,4,8,10,12]
+n=int(input('enter any number'))
+print(n)
+if n in L1:
+    print('yes')
+else:
+    print('no')
+    
+              
