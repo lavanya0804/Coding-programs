@@ -1,0 +1,8 @@
+//Write a program to find min of number in given list.
+L1=[2,4,6,8,10]
+min=L1[0]
+for i in L1:
+    if i<min:
+        min=i
+print('minimum value=',min)
+              
