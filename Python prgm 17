@@ -1,0 +1,9 @@
+//Write a program to calculate sum of even numbers in a list.
+L1=[2,3,4,5,14]
+sum=0
+for i in L1:
+    if i%2==0:
+        sum += i
+print(sum)
+        
+              
