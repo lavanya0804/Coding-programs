@@ -1,0 +1,17 @@
+//Write a program to find biggest of two numbers.
+a=10
+b=20
+c=30
+d=40
+if a>b:
+    if a>c:
+        if a>d:
+            print(a is big)
+if b>c:
+    if b>d:
+        print(b is big)
+if c>d:
+    print(c is big)
+else:
+    print(d is big)
+            
