@@ -1,0 +1,25 @@
+//Write a program to generate employee tax.
+empno=int(input('enter employee no'))
+empname=input('enter employee name')
+empdes=input('enter employee designation')
+bsal=int(input('enter basic salary'))
+da=int(input('enter daily allowance'))
+ta=int(input('enter travelling allowance'))
+hra=int(input('enter house rental allowance'))
+netsalary=bsal+da+ta+hra
+print('net salary is:',netsalary)
+if netsalary>100000:
+    tax=netsalary*10/100
+elif netsalary>50000:
+    tax=netsalary*7/100
+elif netsalary>40000:
+    tax=netsalary*4/100
+elif netsalary>20000:
+    tax=netsalary*2/100
+else:
+    tax=0
+print('employee tax is:',tax)
+
+    
+
+            
