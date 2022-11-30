@@ -1,0 +1,52 @@
+//Write a program to geneate supermarket bill with coupons.
+frts=150
+panr=200
+ripkts=250
+cornflr=100
+sugar=150
+cphno=input('enter customer phone num')
+cname=input('enter customer name')
+caddr=input('enter customer address')
+fruits=int(input('How many fruits do you want:?'))
+paneer=int(input('How much paneer do you want:?'))
+rice=int(input('How many packets do you want:?'))
+cflr=int(input('How much cflr do you want:?'))
+sgr=int(input('How much sgr do you want:?'))
+coupon=input('enter coupon code in capital letters')
+bill=(frts*fruits)+(panr*paneer)+(ripkts*rice)+(cornflr*cflr)+(sugar*sgr)
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+tax=tax+bill
+if coupon=='CHRISMAS' and bill>=3000:
+    dis=bill*20/100
+elif coupon=='CHRISMAS' and bill>=2000:
+    dis=bill*10/100
+elif coupon=='CHRISMAS' and bill>=1000:
+    dis=bill*5/100
+else:
+    dis=0
+if coupon=='DIWALI' and bill>=5000:
+    dis=bill*10/100
+elif coupon=='DIWALI' and bill>=3000:
+    dis=bill*6/100
+elif coupon=='DIWALI' and bill>=1000:
+    dis=bill*4/100
+else:
+    dis=0
+bill=bill+tax-dis
+print(cphno)
+print(cname)
+print(caddr)
+print('bill without tax',bill)
+print('bill without discount',bill)
+print('bill amount',bill)
+print('tax',tax)
+print('discount',dis)
