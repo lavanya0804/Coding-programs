@@ -1,0 +1,20 @@
+//Write program to print electricity bill.
+srno=int(input('enter service no'))
+cname=input('enter customer name')
+oldr=int(input('enter old reading'))
+newr=int(input('enter new reading'))
+units=newr-oldr
+if units<100:
+    amount=units*0.9
+elif units>100 and units<=300:
+    amount=units*1.50
+elif units>300 and units<=500:
+    amount=units*2.75
+elif units>500:
+    amount=units*4.50
+print('service number',srno)
+print('customer name',cname)
+print('old reading',oldr)
+print('new reading',newr)
+print('total units',units)
+print('total amount',amount)
